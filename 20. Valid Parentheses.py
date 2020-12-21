@@ -30,4 +30,4 @@ def isValid( s: str) -> bool:
 
 
 
-isValid("")
+isValid("()")
