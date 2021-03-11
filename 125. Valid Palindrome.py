@@ -7,6 +7,7 @@ def isPalindrome( s: str) -> bool:
     k=''.join(filter(str.isalnum,s.lower()))
     print(k)
     print(''.join(reversed(k))==k,"\n")
+    return ''.join(reversed(''.join(filter(str.isalnum,s.lower())))) == ''.join(filter(str.isalnum, s.lower()))
     return ''.join(reversed(k))==k
 
 #solution 2
