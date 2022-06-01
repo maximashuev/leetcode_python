@@ -8,6 +8,7 @@ answer[i] == "Buzz" if i is divisible by 5.
 answer[i] == i (as a string) if none of the above conditions are true.
 """
 
+
 class Solution(object):
     def fizzBuzz(self, n):
         """
@@ -15,7 +16,7 @@ class Solution(object):
         :rtype: List[str]
         """
         output = []
-        for i in range(1,n+1):
+        for i in range(1, n + 1):
             if i % 3 == 0 and i % 5 == 0:
                 output.append("FizzBuzz")
 
@@ -27,7 +28,6 @@ class Solution(object):
 
             else:
                 output.append(str(i))
-
 
         print(output)
         return output
