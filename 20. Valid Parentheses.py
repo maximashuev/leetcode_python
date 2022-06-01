@@ -5,29 +5,29 @@ Open brackets must be closed by the same type of brackets.
 Open brackets must be closed in the correct order.
 """
 
-def isValid( s: str) -> bool:
-    stack=[]
+
+def isValid(s: str) -> bool:
+    stack = []
     for i in s:
-        if i=="(" or i=="[" or i=="{":
+        if i == "(" or i == "[" or i == "{":
             stack.append(i)
         else:
-            if len(stack)==0:
+            if len(stack) == 0:
                 print("More left")
                 return False
-            last=stack.pop()
-            if last=="(" and i !=")":
+            last = stack.pop()
+            if last == "(" and i != ")":
                 return False
-            if last=="[" and i !="]":
+            if last == "[" and i != "]":
                 return False
-            if last=="{" and i !="}":
+            if last == "{" and i != "}":
                 return False
-    if len(stack)>0:
+    if len(stack) > 0:
         print("False")
         return False
     else:
         print("Pass")
         return True
-
 
 
 isValid("()")

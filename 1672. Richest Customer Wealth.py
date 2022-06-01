@@ -8,4 +8,4 @@ def maximumWealth(accounts):
     return summ
 
 
-maximumWealth([[1,5],[7,3],[3,5]])
+maximumWealth([[1, 5], [7, 3], [3, 5]])

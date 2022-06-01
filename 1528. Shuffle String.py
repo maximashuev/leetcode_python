@@ -11,8 +11,8 @@ def restoreString(s, indices):
     #     sort_list += v
     # print(sort_list)
     # return sort_list
-    print("".join(dict(sorted(zip(indices,s))).values()))
-    return "".join(dict(sorted(zip(indices,s))).values())
+    print("".join(dict(sorted(zip(indices, s))).values()))
+    return "".join(dict(sorted(zip(indices, s))).values())
 
 
 restoreString("codeleet", [4, 5, 6, 7, 0, 2, 1, 3])
