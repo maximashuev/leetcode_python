@@ -1,60 +1,15 @@
-
-"""
-You've created a new programming language, and now you've decided to add hashmap support to it. Actually you are quite disappointed that in common programming languages it's impossible to add a number to all hashmap keys, or all its values. So you've decided to take matters into your own hands and implement your own hashmap in your new language that has the following operations:
-
-insert x y - insert an object with key x and value y.
-get x - return the value of an object with key x.
-addToKey x - add x to all keys in map.
-addToValue y - add y to all values in map.
-To test out your new hashmap, you have a list of queries in the form of two arrays: queryTypes contains the names of the methods to be called (eg: insert, get, etc), and queries contains the arguments for those methods (the x and y values).
-
-Your task is to implement this hashmap, apply the given queries, and to find the sum of all the results for get operations.
-
-Example
-
-For queryType = ["insert", "insert", "addToValue", "addToKey", "get"] and query = [[1, 2], [2, 3], [2], [1], [3]], the output should be solution(queryType, query) = 5.
-
-The hashmap looks like this after each query:
-
-1 query: {1: 2}
-2 query: {1: 2, 2: 3}
-3 query: {1: 4, 2: 5}
-4 query: {2: 4, 3: 5}
-5 query: answer is 5
-The result of the last get query for 3 is 5 in the resulting hashmap.
+def sortSentence(num):
+    s = num.split(" ")
+    result = []
+    for i in s:
+        # print (i[-1])
+        result.insert((int((i[-1]))-1),i[:-1])
 
 
 
-For queryType = ["insert", "addToValue", "get", "insert", "addToKey", "addToValue", "get"] and query = [[1, 2], [2], [1], [2, 3], [1], [-1], [3]], the output should be solution(queryType, query) = 6.
 
-The hashmap looks like this after each query:
+    # print(s)
+    print(" ".join(result))
 
-1 query: {1: 2}
-2 query: {1: 4}
-3 query: answer is 4
-4 query: {1: 4, 2: 3}
-5 query: {2: 4, 3: 3}
-6 query: {2: 3, 3: 2}
-7 query: answer is 2
-The sum of the results for all the get queries is equal to 4 + 2 = 6.
-"""
-def solution(queryType, query):
-    dic = {}
-    result=[]
-    for type_q,q_number in zip(queryType,query):
-        print(type_q,q_number)
-        if type_q=="addToValue":
-            for k,v in dic:
-                print(k,"beforte")
-                dic[k]=int(k)+v
-                print(k,"after")
-        if type_q=="insert":
-            dic.update(dict(q_number))
-        # if type_q=="addToKey ":
-        if type_q=="get ":
-            print (q_number)
-            # result.append(dic[])
-
-    # print (sum(result))
-    return sum(result)
-
+sortSentence("is2 sentence4 This1 a3")
+sortSentence("Myself2 Me1 I4 and3")
