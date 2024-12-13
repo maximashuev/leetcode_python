@@ -2,7 +2,9 @@
 // Create Dictionary
 Dictionary<char, int> my_dict = new Dictionary<char, int>();
 
-
+// Create list 
+int[] L =
+    
 //  Foreach loop
 foreach (char we in s){
     if (my_dict.ContainsKey(we)) // Is dict contains Key
