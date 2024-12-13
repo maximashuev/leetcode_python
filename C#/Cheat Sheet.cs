@@ -3,7 +3,7 @@
 Dictionary<char, int> my_dict = new Dictionary<char, int>();
 
 // Create list 
-int[] L =
+List<string> distinctStrings = new List<string>();
     
 //  Foreach loop
 foreach (char we in s){
