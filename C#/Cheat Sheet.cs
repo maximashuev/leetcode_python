@@ -11,7 +11,16 @@ foreach(KeyValuePair<string, string> entry in myDictionary)
     // do something with entry.Value or entry.Key
 }
 
+foreach (var key in demo.Keys)
+{
+    Console.WriteLine(key);
+    foreach (var elem in demo[key])
+    {
+        Console.WriteLine(elem);
+    }
+}
 
+//  Foreach loop
 foreach (char we in s){
     if (my_dict.ContainsKey(we)) // Is dict contains Key
     {my_dict[we] += 1;}       // increase key's value
