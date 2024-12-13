@@ -4,8 +4,14 @@ Dictionary<char, int> my_dict = new Dictionary<char, int>();
 
 // Create list 
 List<string> distinctStrings = new List<string>();
-    
-//  Foreach loop
+
+//  Foreach Dictionary loop
+foreach(KeyValuePair<string, string> entry in myDictionary)
+{
+    // do something with entry.Value or entry.Key
+}
+
+
 foreach (char we in s){
     if (my_dict.ContainsKey(we)) // Is dict contains Key
     {my_dict[we] += 1;}       // increase key's value
