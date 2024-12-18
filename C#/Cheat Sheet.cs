@@ -7,6 +7,12 @@ List<string> distinctStrings = new List<string>();
 List<string> myList = new List<string>{"Item1", "Item2", "Item3"};
 var firstItem = myList[0];
 
+// String builder to access by index 
+StringBuilder res = new StringBuilder(your_string);
+res[index] = newChar;
+
+
+
 //  Foreach Dictionary loop
 foreach(KeyValuePair<string, string> entry in myDictionary)
 {
