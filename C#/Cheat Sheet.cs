@@ -4,6 +4,8 @@ Dictionary<char, int> my_dict = new Dictionary<char, int>();
 
 // Create list 
 List<string> distinctStrings = new List<string>();
+List<string> myList = new List<string>{"Item1", "Item2", "Item3"};
+var firstItem = myList[0];
 
 //  Foreach Dictionary loop
 foreach(KeyValuePair<string, string> entry in myDictionary)
