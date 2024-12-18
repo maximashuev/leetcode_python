@@ -14,6 +14,9 @@ res[index] = newChar;
 // fILTER STRING IsLetterOrDigit
 string str = new String(s.ToLower().Where(char.IsLetterOrDigit).ToArray());
 
+// compare strings
+bool res = newStr.SequenceEqual(newStr.Reverse());
+
 //  Foreach Dictionary loop
 foreach(KeyValuePair<string, string> entry in myDictionary)
 {
