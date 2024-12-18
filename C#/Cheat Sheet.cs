@@ -11,7 +11,8 @@ var firstItem = myList[0];
 StringBuilder res = new StringBuilder(your_string);
 res[index] = newChar;
 
-
+// fILTER STRING IsLetterOrDigit
+string str = new String(s.ToLower().Where(char.IsLetterOrDigit).ToArray());
 
 //  Foreach Dictionary loop
 foreach(KeyValuePair<string, string> entry in myDictionary)
