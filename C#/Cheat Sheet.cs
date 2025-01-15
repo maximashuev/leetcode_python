@@ -1,4 +1,6 @@
-
+// String to char array and back
+char[] char_your_string = your_string.ToCharArray();
+string back_string = new string(char_your_string) 
 // Create Dictionary
 Dictionary<char, int> my_dict = new Dictionary<char, int>();
 var romans = new Dictionary<char, int>() {
