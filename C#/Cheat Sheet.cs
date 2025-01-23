@@ -61,9 +61,9 @@ else{ return '_';}
 for (int i = 0; i < (values.Count -1); i++){
     Console.WriteLine(i  + values[i]);}  // printing int + string
 
-// Return array of strings of longest strings in array
+// Return array of strings of longest strings in the array
 var longest = inputArray.Where(s => s.Length == inputArray.Max(m => m.Length));
-// Return FIRST longest string  from   strings of array 
+// Return the FIRST longest string  from   strings of the array 
 var longest = inputArray.Where(s => s.Length == inputArray.Max(m => m.Length)).First();
 foreach (var item in longest) { Console.WriteLine(item); }
 
@@ -75,15 +75,15 @@ string[] result = strings.ToArray();
 // Convert array of strings -> list
 List<string> values = inputArray.ToList();
 
-// Create empty str, add value , return lenght of str
+// Create empty str, add value, return length of str
 string er = "";
 er += item_s1;
 return er.Length;
 
-
+// Create an empty string array 
 string[] res = {};
-
-
+// Split and trim spaces 
+string[] split_s = your_string.Split(' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
 
 // Print list of int
 foreach(int t in int_list){Console.Write(t);}
