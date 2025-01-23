@@ -80,6 +80,11 @@ string er = "";
 er += item_s1;
 return er.Length;
 
+
+string[] res = {};
+
+
+
 // Print list of int
 foreach(int t in int_list){Console.Write(t);}
 int_list.ForEach(p => Console.Write(p));
